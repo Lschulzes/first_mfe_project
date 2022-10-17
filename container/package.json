@@ -1,0 +1,13 @@
+{
+  "name": "container",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "html-webpack-plugin": "^4.5.0",
+    "nodemon": "^2.0.6",
+    "webpack": "^5.3.2",
+    "webpack-cli": "^4.1.0",
+    "webpack-dev-server": "^3.11.0"
+  }
+}
