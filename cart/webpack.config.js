@@ -6,20 +6,20 @@ module.exports = {
   mode: "development",
   ...WebpackCommon,
   devServer: {
-    port: 8081,
+    port: 8082,
   },
   output: {
-    uniqueName: "products",
+    uniqueName: "cart",
   },
   plugins: [
     new HtmlWebpackPlugin({
       template: "./public/index.html",
     }),
     new ModuleFederationPlugin({
-      name: "products",
+      name: "cart",
       filename: "remoteEntry.js",
       exposes: {
-        "./ProductsIndex": "./src/index",
+        "./CartIndex": "./src/index",
       },
       shared: ["faker"],
     }),
