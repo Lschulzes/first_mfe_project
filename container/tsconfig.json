@@ -1,5 +1,5 @@
 {
-  "include": ["./src/**/*.ts", "./src/**/*.tsx"],
+  "include": ["./src/**/*.ts", "./src/**/*.tsx", "src/bootstrap.ts"],
   "exclude": ["node_modules", "build", "dist", "src/**/*.js", "src/**/*.jsx"],
   "compilerOptions": {
     /* Visit https://aka.ms/tsconfig to read more about this file */
@@ -99,6 +99,7 @@
 
     /* Completeness */
     // "skipDefaultLibCheck": true,                      /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true /* Skip type checking all .d.ts files. */
+    "skipLibCheck": true /* Skip type checking all .d.ts files. */,
+    "typeRoots": ["./node_modules/@types", "./@types"]
   }
 }
